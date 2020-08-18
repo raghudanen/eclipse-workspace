@@ -1,0 +1,19 @@
+package stepDefinitions;
+
+import static io.restassured.RestAssured.given;
+
+import java.io.IOException;
+
+import Resources.Utils;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
+
+public class StepDefinition {
+
+}

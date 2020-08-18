@@ -1,0 +1,57 @@
+package stepDefinitions;
+
+import static io.restassured.RestAssured.given;
+
+import java.io.IOException;
+
+import Resources.Utils;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+
+public class NewStepDefinition extends Utils {
+
+	RequestSpecification requestSpec;
+	ResponseSpecification responseSpec;
+	Response response;
+
+	@Given("URL and Query Parameters") public void url_and_query_parameters() throws IOException {
+	  	  
+	  requestSpec = given().spec(requestSpecification());
+	  
+	  System.out.println("Given" ); 
+	  }
+
+	@When("user calls movieListAPI with GET http request")
+	public void user_calls_movie_list_api_with_get_http_request() {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("When");
+		
+		// requestSpec.when().get(resourceAPI.getResource())
+		responseSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		response = requestSpec.when().get("resource/yitu-d5am.json");
+	}
+
+	@Then("the API call is successfully completed with status code {int}")
+	public void the_api_call_is_successfully_completed_with_status_code(Integer int1) {
+		System.out.println("Then");
+		then().log().all();
+	}
+
+	@Then("status in response body is OK")
+	public void status_in_response_body_is_ok() {
+		System.out.println("And");
+		// Write code here that turns the phrase above into concrete actions
+	}
+
+
+
+}

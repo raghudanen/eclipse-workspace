@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-04T12:28:22.385Z",
+        "line": 3,
+        "name": "Verify Movie List is displayed",
+        "description": "",
+        "id": "fetching-movie-list;verify-movie-list-is-displayed",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 603348000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "URL and Query Parameters",
+            "match": {
+              "location": "stepDefinitions.NewStepDefinition.url_and_query_parameters()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2033199500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls movieListAPI with GET http request",
+            "match": {
+              "location": "stepDefinitions.NewStepDefinition.user_calls_movie_list_api_with_get_http_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "status in response body is OK",
+            "match": {
+              "location": "stepDefinitions.NewStepDefinition.status_in_response_body_is_ok()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Fetching Movie List",
+    "description": "",
+    "id": "fetching-movie-list",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/MoviesList.feature",
+    "tags": []
+  }
+]

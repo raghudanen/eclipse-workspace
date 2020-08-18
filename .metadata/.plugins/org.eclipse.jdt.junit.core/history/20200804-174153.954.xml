@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="MovieList" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="cucumber.options.TestRunner" time="2.799">
+    <testsuite name="Fetching Movie List" time="2.799">
+      <testcase name="Verify Movie List is displayed" classname="Fetching Movie List" time="2.799">
+        <failure>java.lang.AssertionError: expected:&lt;400&gt; but was:&lt;200&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:835)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:647)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:633)&#13;
+	at stepDefinitions.NewStepDefinition.status_in_response_body_is_ok(NewStepDefinition.java:45)&#13;
+	at ✽.status in response body is OK(file:///D:/eclipse-workspace/MovieList/src/test/java/features/MoviesList.feature:7)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

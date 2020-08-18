@@ -1,0 +1,57 @@
+Request method:	GET
+Request URI:	https://data.sfgov.org/resource/yitu-d5am.json?locations=Epic%20Roasthouse%20%28399%20Embarcadero%29
+Proxy:			<none>
+Request params:	locations=Epic Roasthouse (399 Embarcadero)
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 04 Aug 2020 12:28:25 GMT
+Content-Type: application/json;charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+ETag: "YWxwaGEuMzk5Ml8zXzc0N3ZoRDJkZGhkZ3N1VE1VbjFfdWpwNDRLd3JZ---gziph3Qn4XN49tPsZivvK95IBVjfKMo--gzip--gzip"
+X-SODA2-Fields: ["title","release_year","locations","fun_facts","production_company","distributor","director","writer","actor_1","actor_2","actor_3"]
+X-SODA2-Types: ["text","number","text","text","text","text","text","text","text","text","text"]
+X-SODA2-Data-Out-Of-Date: false
+X-SODA2-Truth-Last-Modified: Wed, 14 Aug 2019 18:45:48 GMT
+X-SODA2-Secondary-Last-Modified: Wed, 14 Aug 2019 18:45:48 GMT
+Last-Modified: Wed, 14 Aug 2019 18:45:48 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Age: 2
+X-Socrata-Region: aws-us-east-1-fedramp-prod
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Socrata-RequestId: af35cab6a36c6a4f3e056c01854f8691
+
+[
+    {
+        "title": "180",
+        "release_year": "2011",
+        "locations": "Epic Roasthouse (399 Embarcadero)",
+        "production_company": "SPI Cinemas",
+        "director": "Jayendra",
+        "writer": "Umarji Anuradha, Jayendra, Aarthi Sriram, & Suba",
+        "actor_1": "Siddarth",
+        "actor_2": "Nithya Menon",
+        "actor_3": "Priya Anand"
+    },
+    {
+        "title": "180",
+        "release_year": "2011",
+        "locations": "Epic Roasthouse (399 Embarcadero)",
+        "production_company": "SPI Cinemas",
+        "director": "Jayendra",
+        "writer": "Umarji Anuradha, Jayendra, Aarthi Sriram, & Suba ",
+        "actor_1": "Siddarth",
+        "actor_2": "Nithya Menon",
+        "actor_3": "Priya Anand"
+    }
+]

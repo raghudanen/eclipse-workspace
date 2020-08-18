@@ -1,0 +1,38 @@
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+import org.testng.annotations.Test;
+
+public class APITest {
+	
+	//@Test
+
+	public void get_circuits() {
+		// TODO Auto-generated method stub
+	String response = 	given().queryParam("MRData.driverId", "abate").header("Content-Type","application/json").
+		when().get("http://ergast.com/api/f1/drivers.json?limit=1").
+		then().extract().response().asString();
+		
+	System.out.println(response);
+	JsonPath js = new JsonPath(response);
+	String abc = js.getString("MRData.url");
+	System.out.println("Trying jspath " +abc);
+
+	}
+	
+	@Test
+
+	public void get_pitStops() {
+		
+		
+		given().
+		when().get("http://ergast.com/api/f1/2011/5/pitstops.json").
+		then().log().all().assertThat().statusCode(200).body("MRData.series",equalTo( "f1"));
+	}
+	
+	
+	}
+
+

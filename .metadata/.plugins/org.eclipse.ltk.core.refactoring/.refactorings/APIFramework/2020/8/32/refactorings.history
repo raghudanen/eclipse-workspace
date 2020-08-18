@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;global.properties&apos; to &apos;MovieList/src/test/java/Resources&apos;&#x0D;&#x0A;- Original project: &apos;APIFramework&apos;&#x0D;&#x0A;- Destination element: &apos;MovieList/src/test/java/Resources&apos;&#x0D;&#x0A;- Original element: &apos;global.properties&apos;" description="Copy file" destination="=MovieList/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;Resources" element1="src/test/java/Resources/global.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1596532973735" units="0" version="1.0"/>
+</session>

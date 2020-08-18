@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="MovieList" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumber.options.TestRunner" time="0.711">
+    <testsuite name="Fetching Movie List" time="0.711">
+      <testcase name="Verify Movie List is displayed" classname="Fetching Movie List" time="0.711">
+        <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at stepDefinitions.StepDefinition.url_and_query_parameters(StepDefinition.java:30)&#13;
+	at ✽.URL and Query Parameters(file:///D:/eclipse-workspace/MovieList/src/test/java/features/MoviesList.feature:5)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

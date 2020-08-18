@@ -1,0 +1,18 @@
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+import org.testng.annotations.Test;
+
+@Test
+public class APITest {
+
+		// TODO Auto-generated method stub
+		given().accept("JSON").
+		when().get("http://ergast.com/api/f1/2005/last").
+		then().log().all();
+		
+
+	}
+

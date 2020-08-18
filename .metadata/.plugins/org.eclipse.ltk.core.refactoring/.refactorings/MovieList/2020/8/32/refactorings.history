@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;stepDefinitions.StepDefinition&apos; to &apos;NewStepDefinition&apos;&#x0D;&#x0A;- Original project: &apos;MovieList&apos;&#x0D;&#x0A;- Original element: &apos;stepDefinitions.StepDefinition&apos;&#x0D;&#x0A;- Renamed element: &apos;stepDefinitions.NewStepDefinition&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StepDefinition&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;stepDefinitions{StepDefinition.java[StepDefinition" matchStrategy="1" name="NewStepDefinition" qualified="false" references="true" similarDeclarations="false" stamp="1596538121478" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="MovieList" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumber.options.TestRunner" time="0.113">
+    <testsuite name="Fetching Movie List" time="0.113">
+      <testcase name="Verify Movie List is displayed" classname="Fetching Movie List" time="0.113">
+        <error>io.cucumber.junit.UndefinedStepException: The step "URL and Query Parameters" is undefined. You can implement it using the snippet(s) below:
+
+@Given("URL and Query Parameters")
+public void url_and_query_parameters() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("user calls movieListAPI with GET http request")
+public void user_calls_movie_list_api_with_get_http_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the API call is successfully completed with status code {int}")
+public void the_api_call_is_successfully_completed_with_status_code(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("status in response body is OK")
+public void status_in_response_body_is_ok() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

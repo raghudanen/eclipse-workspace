@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;APITest.java&apos; to &apos;DemoProject/src/test/java/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;DemoProject&apos;&#x0D;&#x0A;- Destination element: &apos;DemoProject/src/test/java/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;files.APITest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;files{APITest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1596703813172" units="1" version="1.0"/>
+</session>

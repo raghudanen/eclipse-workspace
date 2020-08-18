@@ -1,0 +1,58 @@
+import io.restassured.RestAssured;
+import io.restassured.filter.session.SessionFilter;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import java.io.File;
+
+import org.testng.annotations.Test;
+
+public class JiraTest {
+
+	@Test
+	
+	public void AddComment(){
+		
+		// Get Session Info
+		RestAssured.baseURI = "http://localhost:9090";
+		SessionFilter session = new SessionFilter();
+		
+		String response = given().header("Content-Type", "application/json")
+		.body("{ \"username\": \"raghudanen\", \"password\": \"Gnusmas1!\" }")
+		.filter(session)
+		.log().all()
+		.when()
+		.post("/rest/auth/1/session")
+		.then().log().all().extract().response().asString();
+		
+		
+		//Add comment
+		
+		given().pathParam("Issue_id", "10019").log().all().header("Content-Type", "application/json")
+		.body("{\r\n" + 
+				"    \"body\": \" This is my Second comment\",\r\n" + 
+				"    \"visibility\": {\r\n" + 
+				"        \"type\": \"role\",\r\n" + 
+				"        \"value\": \"Administrators\"\r\n" + 
+				"    }\r\n" + 
+				"}")
+		.filter(session)
+		.when()
+		.post("/rest/api/2/issue/{Issue_id}/comment")
+		.then().assertThat().statusCode(201)
+		.log().all();
+		
+		// Add attachment
+		
+		given().header("X-Atlassian-Token:", "no-check" ).pathParam("Issue_id", "10019")
+		.header("Content-Type", "multipart/form-data")
+		.filter(session)
+		.multiPart("file", new File("JIRA.txt"))
+		.when().post("/rest/api/2/issue/{Issue_id}/attachments")
+		.then().log().all().assertThat().statusCode(200);
+	}
+	
+	
+}

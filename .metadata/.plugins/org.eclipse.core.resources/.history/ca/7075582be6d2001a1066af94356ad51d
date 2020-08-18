@@ -1,0 +1,7 @@
+package javaTesting;
+
+public interface CentralTraffic {
+	public void greenGo();
+	public void redStop();
+
+}

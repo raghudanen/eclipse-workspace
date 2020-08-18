@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="MovieList" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumber.options.TestRunner" time="4.131">
+    <testsuite name="Fetching Movie List" time="4.131">
+      <testcase name="Verify Movie List is displayed" classname="Fetching Movie List" time="4.104"/>
+      <testcase name="Verify Movie List filtered on Title" classname="Fetching Movie List" time="0.027">
+        <error>io.cucumber.junit.UndefinedStepException: The step "URL and Title Parameters" is undefined. You can implement it using the snippet(s) below:
+
+@Given("URL and Title Parameters")
+public void url_and_title_parameters() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,33 @@
+package stepDefinitions;
+
+public class StepDefinition {
+	
+	@Given("URL and Query Parameters")
+	public void url_and_query_parameters() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+	Some other steps were also undefined:
+
+	@When("user calls {string} with GET http request")
+	public void user_calls_with_get_http_request(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("the API call is successfully completed with status code {int}")
+	public void the_api_call_is_successfully_completed_with_status_code(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("status in response body is OK")
+	public void status_in_response_body_is_ok() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+
+
+}
